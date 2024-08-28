@@ -1,13 +1,231 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
-  </head>
-  <body>
-    <script type="module" src="/main.js"></script>
-    <div>start</div>
-  </body>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800"
+          rel="stylesheet"
+    >
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+</head>
+<body>
+<script type="module" src="/main.js"></script>
+<script type="module" src="/src/js/mountCarousel.js" defer></script>
+<header>
+    <div class="menu"></div>
+    <div class="logo"></div>
+</header>
+<main class="main">
+    <section class="hero">
+        <img class="hero__background" src="src/images/jpg/hero.jpg" alt="woman">
+        <div class="hero__content">
+            <h1 class="hero__text">
+                new near, new “you”
+                with [product name]
+            </h1>
+            <button class="hero__cta btn">
+                <span class="h2">try [product name]</span>
+            </button>
+        </div>
+    </section>
+    <section class="product-benefits">
+        <div class="product-benefits__container">
+            <div class="product-benefits__card">
+                <div class="product-benefits__svg" data-svg="moon"></div>
+                <h3>Improves
+                    sleep</h3>
+            </div>
+            <div class="product-benefits__card">
+                <div class="product-benefits__svg" data-svg="shieldHeart"></div>
+                <h3>Boosts immune
+                    system</h3>
+            </div>
+            <div class="product-benefits__card">
+                <div class="product-benefits__svg" data-svg="hand"></div>
+                <h3>Enhances
+                    strength</h3>
+            </div>
+            <div class="product-benefits__card">
+                <div class="product-benefits__svg" data-svg="intestines"></div>
+                <h3>Improves
+                    digestion</h3>
+            </div>
+        </div>
+    </section>
+    <section class="subscription-benefits">
+        <div class="subscription-benefits__container">
+            <h2 class="subscription-benefits__title">subscribe & save</h2>
+            <div class="subscription-benefits__card">
+                <div class="subscription-benefits__svg" data-svg="rotation"></div>
+                <h3>delivery every
+                    30 days</h3>
+            </div>
+            <div class="subscription-benefits__card">
+                <div class="subscription-benefits__svg" data-svg="percentage"></div>
+                <h3>best value
+                    per box</h3>
+            </div>
+            <div class="subscription-benefits__card">
+                <div class="subscription-benefits__svg" data-svg="cross"></div>
+                <h3>no commitment,
+                    cancel anytime
+                </h3>
+            </div>
+        </div>
+    </section>
+    <section class="transformation-benefits">
+        <div class="transformation-benefits__container">
+            <h2 class="transformation-benefits__title">Performance nutrition and healthy transformation made
+                simple:</h2>
+            <div class="transformation-benefits__card">
+                <div class="transformation-benefits__svg" data-svg="body"></div>
+                <h3>Enhance <b>endurance</b>,
+                    <b>performance</b>, and
+                    exercise recovery</h3>
+            </div>
+            <div class="transformation-benefits__card">
+                <div class="transformation-benefits__svg" data-svg="lightning"></div>
+                <h3>Enjoy jitter-free
+                    <b>energy</b> to tackle
+                    your busy schedule</h3>
+            </div>
+            <div class="transformation-benefits__card">
+                <div class="transformation-benefits__svg" data-svg="shieldVirus"></div>
+                <h3>Strengthen your
+                    <b>immune health</b> to stay
+                    on your game</h3>
+            </div>
+            <div class="transformation-benefits__card">
+                <div class="transformation-benefits__svg" data-svg="thumbsUp"></div>
+                <h3><b>Tastes amazing</b>! No
+                    bitterness, gritty, or
+                    clumpy texture</h3>
+            </div>
+            <div class="transformation-benefits__card">
+                <div class="transformation-benefits__svg" data-svg="doubleCheck"></div>
+                <h3><b>30 sec habit</b>. Mixes in
+                    any beverage fast
+                    and easy</h3>
+            </div>
+            <div class="transformation-benefits__card">
+                <div class="transformation-benefits__svg" data-svg="flame"></div>
+                <h3>Recharged
+                    <b>metabolism</b> to stay
+                    in peak shape</h3>
+            </div>
+        </div>
+    </section>
+    <section class="certification">
+        <div class="certification__container">
+            <div class="certification__svg" data-svg="logo2"></div>
+            <span>only exceptional USDA certified organic
+                sustainable sourced ingredients qualify.</span>
+        </div>
+    </section>
+    <section class="product-blend">
+        <div class="product-blend__container">
+            <h2 class="product-blend__title h1">
+                <span class="product-blend__title--red">[product name]</span>
+                blend
+            </h2>
+            <div class="product-blend__content">
+                <div class="main-carousel" data-flickity>
+                    <div class="carousel-cell">
+                        <div class="product-blend__item">
+                            <div class="product-blend__item--left">
+                                <h2>Metabolism Boosting</h2>
+                                <span class="h3">These powerful superfoods ignite your
+                    metabolism and reduce bloating. They
+                    improve digestion and deliver the energy
+                    you need to get things done.</span>
+                                <span class="h3">Main Organic Ingiredents</span>
+                            </div>
+                            <div class="product-blend__item--right">
+                                <img src="src/images/png/ingredients.png" alt="ingredients"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="product-blend__item">
+                            item2
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="product-blend__item">
+                            item3
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="product-blend__button btn">
+                <span class="h2">try [product name]</span>
+            </button>
+        </div>
+    </section>
+    <section class="timeline">
+        <div class="timeline__container">
+            <div class="timeline__item1">
+                <b>Mission</b>
+                Our team of researchers are working around the clock to uncover the best performance and health-boosting
+                superfoods on the planet. We do the homework so you don’t have to. Each superfood is supported by strong
+                clinical studies.
+                <div data-svg="line"></div>
+            </div>
+
+            <div class="timeline__item2">
+                <b>The problem</b>
+                our advisory panel reviews all of the scientific research in detail. Each ingredient must pass the
+                rigorous approval process. Once approved, only then do our formulas move on to production.
+                <div data-svg="line"></div>
+            </div>
+
+            <div class="timeline__item3">
+                <b>That isn’t therapeutic</b>
+                production takes place in our GMP-compliant, state of the art manufacturing facility. Once again, only
+                using 100% organic ingredients that have been verified by the USDA.
+                <div data-svg="line"></div>
+            </div>
+
+            <div class="timeline__item4">
+                <b>The result</b>
+                Getting our formulas into the hands of people who need it most and transforming lives for the better. We
+                believe in improving humankind by improving human performance. And that starts with nourishing your body
+                with the right fuel.
+                <div data-svg="line"></div>
+            </div>
+            <div class="timeline__image" data-svg="timeline"></div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="faq__container">
+            <h2 class="transformation-benefits__title">FAQs</h2>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        How do I contact the creator of a Pen?
+                    </div>
+                    <div class="accordion__collapse">
+                        You can leave a comment on any public Pen. Click the "Comments" link in the Pen editor view, or
+                        visit the Details page.
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                        How do I contact the creator of a Pen?
+                    </div>
+                    <div class="accordion__collapse">
+                        You can leave a comment on any public Pen. Click the "Comments" link in the Pen editor view, or
+                        visit the Details page.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer></footer>
+</body>
 </html>

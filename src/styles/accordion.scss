@@ -1,0 +1,18 @@
+.accordion {
+  &__collapse {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+  }
+
+  &__item {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__item.active &__collapse {
+    max-height: 100vh;
+    transition: 2s;
+    overflow: unset;
+  }
+}

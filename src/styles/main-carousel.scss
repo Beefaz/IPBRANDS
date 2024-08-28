@@ -1,0 +1,55 @@
+//carousel style rework
+.main-carousel {
+  .carousel-cell {
+    width: 100%;
+  }
+
+  .flickity-controls {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .flickity-button {
+      position: static;
+      top: unset;
+      bottom: -46px;
+      height: 30px;
+      width: 30px;
+      background: unset;
+      transform: unset;
+      color: #000000;
+      opacity: 1;
+
+      &.previous {
+        order: 1;
+      }
+
+      &.next {
+        order: 3;
+      }
+
+      svg {
+        position: static;
+      }
+    }
+
+    .flickity-page-dots {
+      order: 2;
+      width: unset;
+      position: static;
+
+      .dot {
+        opacity: 1;
+        border: 1px solid black;
+        background-color: unset;
+        margin-bottom: 2px;
+
+        &.is-selected {
+          background-color: #000000;
+        }
+      }
+    }
+  }
+}
