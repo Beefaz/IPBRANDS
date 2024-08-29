@@ -495,6 +495,8 @@ main {
   &__item1, &__item3 {
     @media only screen and (min-width: 768px) {
       text-align: end;
+      display: flex;
+      align-items: end;
     }
   }
 
@@ -504,9 +506,6 @@ main {
     }
 
     .hr {
-      height: 20px;
-      display: flex;
-      justify-content: end;
       transform: rotate(180deg);
     }
   }
@@ -576,6 +575,7 @@ main {
 
   .hr {
     width: 100%;
+    max-width: 336px;
     @media only screen and (max-width: 768px) {
       display: none;
     }
