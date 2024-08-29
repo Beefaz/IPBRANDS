@@ -1,5 +1,4 @@
 //mounts carousel and changes location of buttons in order to match style
-import '../styles/main-carousel.scss';
 
 export function mountCarousel(className = 'main-carousel') {
   new Flickity(`.${className}`);

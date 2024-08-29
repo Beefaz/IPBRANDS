@@ -1,3 +1,6 @@
+@import "main-carousel";
+@import "accordion";
+
 * {
   box-sizing: border-box;
 }
@@ -356,6 +359,10 @@ main {
     margin: 0 auto;
     padding: 60px;
     background: rgba(245, 245, 245, 1);
+  }
+
+  .accordion__collapse {
+    white-space: pre-line;
   }
 }
 
