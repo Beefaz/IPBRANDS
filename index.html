@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Vite App</title>
+    <title>IPBrands</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800"
           rel="stylesheet"
     >
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!--    <link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
 </head>
 <body>
 <script type="module" src="/main.js"></script>
 <script type="module" src="/src/js/mountCarousel.js" defer></script>
-<header>
-    <div class="menu"></div>
-    <div class="logo"></div>
+<header class="header">
+    <div class="header__container">
+        <nav class="header__nav">
+            <ul>
+                <li><a class="header__nav-item h3" href="#">shop</a></li>
+                <li><a class="header__nav-item h3" href="#">mission</a></li>
+            </ul>
+        </nav>
+        <div data-svg="burger" class="header__burger"></div>
+        <a data-svg="logo" class="header__logo" href="#"></a>
+    </div>
 </header>
 <main class="main">
     <section class="hero">
         <img class="hero__background" src="src/images/jpg/hero.jpg" alt="woman">
+        <img class="hero__background-mobile" src="src/images/jpg/hero_tablet.jpg" alt="woman">
         <div class="hero__content">
             <h1 class="hero__text">
                 new near, new “you”
@@ -57,7 +65,7 @@
     </section>
     <section class="subscription-benefits">
         <div class="subscription-benefits__container">
-            <h2 class="subscription-benefits__title">subscribe & save</h2>
+            <h2 class="subscription-benefits__title"><span>subscribe & save</span></h2>
             <div class="subscription-benefits__card">
                 <div class="subscription-benefits__svg" data-svg="rotation"></div>
                 <h3>delivery every
@@ -128,14 +136,14 @@
     <section class="product-blend">
         <div class="product-blend__container">
             <h2 class="product-blend__title h1">
-                <span class="product-blend__title--red">[product name]</span>
+                <span class="product-blend__title_red">[product name]</span>
                 blend
             </h2>
             <div class="product-blend__content">
                 <div class="main-carousel" data-flickity>
                     <div class="carousel-cell">
                         <div class="product-blend__item">
-                            <div class="product-blend__item--left">
+                            <div class="product-blend__item_left">
                                 <h2>Metabolism Boosting</h2>
                                 <span class="h3">These powerful superfoods ignite your
                     metabolism and reduce bloating. They
@@ -143,7 +151,7 @@
                     you need to get things done.</span>
                                 <span class="h3">Main Organic Ingiredents</span>
                             </div>
-                            <div class="product-blend__item--right">
+                            <div class="product-blend__item_right">
                                 <img src="src/images/png/ingredients.png" alt="ingredients"/>
                             </div>
                         </div>
@@ -168,33 +176,36 @@
     <section class="timeline">
         <div class="timeline__container">
             <div class="timeline__item1">
+                <div data-svg="hand" class="icon"></div>
                 <b>Mission</b>
                 Our team of researchers are working around the clock to uncover the best performance and health-boosting
                 superfoods on the planet. We do the homework so you don’t have to. Each superfood is supported by strong
                 clinical studies.
-                <div data-svg="line"></div>
+                <div data-svg="line" class="hr"></div>
             </div>
-
             <div class="timeline__item2">
+                <div data-svg="error" class="icon"></div>
                 <b>The problem</b>
                 our advisory panel reviews all of the scientific research in detail. Each ingredient must pass the
                 rigorous approval process. Once approved, only then do our formulas move on to production.
-                <div data-svg="line"></div>
+                <div data-svg="line" class="hr"></div>
             </div>
 
             <div class="timeline__item3">
+                <div data-svg="heart" class="icon"></div>
                 <b>That isn’t therapeutic</b>
                 production takes place in our GMP-compliant, state of the art manufacturing facility. Once again, only
                 using 100% organic ingredients that have been verified by the USDA.
-                <div data-svg="line"></div>
+                <div data-svg="line" class="hr"></div>
             </div>
 
             <div class="timeline__item4">
+                <div data-svg="body" class="icon"></div>
                 <b>The result</b>
                 Getting our formulas into the hands of people who need it most and transforming lives for the better. We
                 believe in improving humankind by improving human performance. And that starts with nourishing your body
                 with the right fuel.
-                <div data-svg="line"></div>
+                <div data-svg="line" class="hr"></div>
             </div>
             <div class="timeline__image" data-svg="timeline"></div>
         </div>
